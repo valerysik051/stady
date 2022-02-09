@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Somethihg</title>
+</head>
+<ul>
+<li>Введите число 7</li>
+<li>Умножте его на месяц вашего рождения</li>
+<li>Вычтите 1</li>
+<li>Умножте результат на 13</li>
+<li>Добавте число вашего рождения</li>
+<li>Добавьте 3</li>
+<li>Умнождете результат на 11</li>
+<li>Вычтете месяц вашего рождения</li>
+<li>Вычтите число вашего дня рождения</li>
+<li>Разделите результат на 10</li>
+<li>Добавьте 11</li>
+<li>Разделите результат на 100</li>
+
+</ul>
+<script>
+var numberSeven = Number(prompt('введите число 7'));
+var birthMonth = Number(prompt('Введите месяц вашего рождения'));
+var calculation = numberSeven * birthMonth;
+calculation -= 1;
+calculation *= 13;
+var birthDay = Number(prompt('Введите день вашего рождения'));
+calculation += birthDay;
+calculation += 3;
+calculation *= 11;
+calculation -= birthMonth;
+calculation -= birthDay;
+calculation /= 10;
+calculation += 11;
+calculation /=100;
+
+document.write("Вы родились " + calculation);
+
+
+</script>
+
+
+</html>
